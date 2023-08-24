@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+</head>
+
+<body>
+    <div class="card" id="card">
+        <form class="actions" name="loginForm">
+            <p id="alert" class="alert"></p>
+            <h3 style="text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);">Login</h3>
+            <input type="text" name="username" placeholder="username" autofocus>
+            <input type="password" name="password" placeholder="password" required>
+            <button class="submit" onclick="validateForm()" type="button">LOGIN</button>
+            <div class="checkbox-wrapper-4">
+                <input class="inp-cbx" id="morning" type="checkbox" />
+                <label class="cbx" for="morning"><span>
+                        <svg width="12px" height="10px">
+                            <use xlink:href="#check-4"></use>
+                        </svg></span><span>Beni hatırla</span></label>
+                <svg class="inline-svg">
+                    <symbol id="check-4" viewbox="0 0 12 10">
+                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                    </symbol>
+                </svg>
+            </div>
+            <p>Hesabın Yok Mu ? <a class="clicktype" href="#" id="newpageopen">Hesap Oluştur.</a>
+            </p>
+
+        </form>
+    </div>
+
+    <div class="newpage" id="account">
+        <form class="newpageaccount" id="accountForm" name="accountForm">
+            <p id="alert2"></p>
+            <h3 style="text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);">New Account</h3>
+            <input type="text" id="firstname" name="firstname" placeholder="name" required>
+            <span class="error-message"></span>
+            <input type="text" id="lastname" name="lastname" placeholder="lastname" required>
+            <input type="text" id="mail" name="mail" placeholder="mail" required>
+            <input type="password" id="password" name="password" placeholder="password" required>
+            <input type="password" id="againpassword" name="againpassword" placeholder="password" required>
+            <button type="submit" id="sıgnup-btn">SIGN UP</button>
+        </form>
+    </div>
+
+
+    <!-- <script src="login.js"></script> -->
+
+
+    <script src="my_jquery.js"></script>
+</body>
+
+</html>
